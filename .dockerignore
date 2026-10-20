@@ -1,0 +1,11 @@
+node_modules
+client/node_modules
+client/dist
+.env
+.env.*
+.git
+.terraform
+*.tfstate
+*.tfstate.*
+*.tf
+npm-debug.log*

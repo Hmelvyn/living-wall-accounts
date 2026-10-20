@@ -1,0 +1,88 @@
+.page {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+
+.page > p {
+  margin-bottom: 20px;
+}
+
+.list-heading,
+.wall-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.form-section {
+  margin: 24px 0;
+  padding: 16px;
+  border: 1px solid #ccc;
+}
+
+.wall-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.wall-form label {
+  display: grid;
+  gap: 4px;
+}
+
+.wall-form input,
+.wall-form select {
+  min-height: 30px;
+  padding: 4px 6px;
+}
+
+.form-buttons,
+.error {
+  grid-column: 1 / -1;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.error {
+  color: #a00000;
+}
+
+.wall-list {
+  display: grid;
+  gap: 12px;
+}
+
+.wall {
+  padding: 14px;
+  border: 1px solid #ccc;
+}
+
+.wall h3,
+.wall p {
+  margin: 4px 0;
+}
+
+@media (max-width: 600px) {
+  .page {
+    margin-top: 20px;
+  }
+
+  .wall-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-buttons,
+  .error {
+    grid-column: auto;
+  }
+
+  .wall-heading {
+    align-items: flex-start;
+  }
+}

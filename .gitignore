@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+dist/
+
+# Environment variables and credentials
+.env
+.env.*
+.aws/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Terraform state and local overrides
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
