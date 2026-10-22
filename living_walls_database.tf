@@ -20,3 +20,4 @@ resource "aws_dynamodb_table" "living_walls" {
     Name = "LivingWallsTable"
   }
 }
+
